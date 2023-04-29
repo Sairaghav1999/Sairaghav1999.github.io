@@ -120,14 +120,11 @@
             <div id="proj-div">
                 <div class="proj-content">
                     <p>
-                        <b>Comparing Quantitative Linguistics of a Corpus with Vocabulary Networks</b>
-                        <br><small>November 2021 - December 2021</small>
+                        <b>Charles River Laboratory Stock Analysis	</b>
+                        <br><small>Sept – Dec 2022</small>
                         <ul>
-                            <li>Goal: To compare and correlate emperical results of quantitative linguistic measures with metrics of the corpus as a vocabulary network</li>
-                            <li>Languages and networks both have structure and patterns, and follow power laws</li>
-                            <li>I fit Heaps', Zipf's, and the brevity law on the corpus, and created 200-dimension skip-grams of each word</li>
-                            <li>I then created a weighted, directed network using words in the vocabulary with edges based on co-occurrence, and found a relationship between term frequency and degree</li>
-                            <li>The network was also used as a language model</li>
+                            <li>Developed a predictive model using LSTM to build a stock trading tool that recommends best trading strategies at a given specific technical indicator</li>
+                            <li>Generated trading signals using Bollinger bands, CAPM and Fama – French 5 Factor model to verify them to an accuracy of 90%</li>
                             <li>Read the <a class="p-a" href="resources/Comparing Quantiative Linguistics with Vocabulary Networks.pdf" target="_blank">report</a></li>
                             <li><a class="p-a" href="https://github.com/samar14641/ql-vocab-nets" target="_blank">GitHub</a></li>
                         </ul>
@@ -135,19 +132,12 @@
                 </div>
                 <div class="proj-content">
                     <p>
-                        <b>COVID-19 in US Counties: A Network Analysis</b>
+                        <b>Plant detection using multiple GPUs</b>
                         <br><small>Work done along with <a class="p-a" href="https://www.khoury.northeastern.edu/people/rithika-lakshminarayanan/" target="_blank">Rithika Lakshminarayanan</a></small>
-                        <br><small>September 2021 - December 2021</small>
+                        <br><small>Sept – Dec 2022</small>
                         <ul>
-                            <li>Goal: To analyse how COVID-19 spread over time at a county level</li>
-                            <li>We created a correlation network using data from Feb'20 to Oct'21:</li>
-                                <ul>
-                                    <li>Nodes: Counties (929 nodes)</li>
-                                    <li>Edges: An edge exists between a pair of nodes if the correlation coefficient of the number of new cases is greater than 0.75 (5,566 edges)</li>
-                                    <li>Edge weight: Correlation coefficient value</li>
-                                    <li>Degree exponent: 4.05</li>
-                                </ul>
-                            <li>Using greedy modularity maximisation and 5-cliques, we were able to detect communites that correspond to geographical regions, and communites where nodes have geographical proximity</li>
+                            <li>Compared performance of multiple CNN architectures for plant disease detection tasks on the Kaggle dataset through distributed parallel training on multiple GPUs</li>
+                            <li>Evaluated performance of DNNs (e.g. Mobilenetv2, VGG16, Resnet34) and ran parallel computations on smaller mini-batches using PyTorch.</li>
                             <li>View the <a class="p-a" href="resources/COVID-19 in US Counties.pdf" target="_blank">presentation</a></li>
                             <li><a class="p-a" href="https://github.com/samar14641/covid-us-networks" target="_blank">GitHub</a></li>
                         </ul>
@@ -155,31 +145,28 @@
                 </div>
                 <div class="proj-content">
                     <p>
-                        <b>Bitcoin: Creating an Aggregate Growth Metric and Price Prediction</b>
-                        <br><small>July 2021</small>
+                        <b>Image captioning	</b>
+                        <br><small>May – Sept 2022</small>
                         <ul>
-                            <li>Goal: To create an aggreate growth metric for Bitcoin, and develop a BTC price prediction model</li>
-                            <li>I started out with an exploratory analysis of available Bitcoin metrics, such as difficulty, hash rate, and transaction count to determine the best features to select for the growth and price models</li>
-                            <li>Using hash rate, I implemented a hash ribbon as a single-attribute growth metric for Bitcoin</li>
-                            <li>I created a BTC price prediction model using an SVR:
-                                <ul>
-                                    <li>Kernel: Polynomial</li>
-                                    <li>Cross-validation: 10-fold, 3-repeat</li>
-                                    <li>Mean test R<sup>2</sup>: 0.8377</li>
-                                </ul>
-                            </li>
+                            <li>Summarized text captions for images in the Flickr 8k Database using a combination of CNN and RNN for feature extraction.</li>
+                            <li>Implemented LSTM and GRU for image caption generation. Conducted hyperparameter tuning to optimize the model and evaluated its performance against other models.</li>
+                            <li>Evaluated caption accuracy through BLEU scores across multiple models for images from the Flicker 8k Database.</li>
                             <li><a class="p-a" href="https://github.com/samar14641/btc-agg-growth" target="_blank">GitHub</a></li>
                         </ul>
                     </p>
                 </div>
                 <div class="proj-content">
                     <p>
-                        <b>COVID-19 Visualisations</b>
-                        <br><small>April 2021</small>
+                        <b>Spotify Recommendation and Prediction Analysis</b>
+                        <br><small>May – Aug 2022</small>
                         <ul>
-                            <li>Goal: To track statistics related to COVID-19 in certain regions and create accessible visualisations</li>
-                            <li>Starting with data for Massachusetts, I created a skeleton code to create visualisations of data obtained from <a class="p-a" href="https://www.mass.gov/info-details/covid-19-response-reporting#covid-19-daily-dashboard-" target="_blank">Mass.gov</a></li>
-                            <li>Accessible colour palettes were created using a tool available on <a class="p-a" href="https://davidmathlogic.com/colorblind" target="_blank">David Nichols' website</a> for people with protanopia, deuteranopia, and tritanopia</li>
+                            <li>Evaluated various Machine Learning models on Spotify API data and selected the best based on R2 Score evaluation metric</li>
+                            <li>Developed two recommendation systems based on k-means clustering of numerical audio features by genre:
+                                <ul>
+                                    <li>Built a content-based recommendation system that ingests data from the user’s playlists using Spotify API</li>
+                                    <li>Developed a neural Collaborative Filtering recommendation system using TensorFlow, resulting in playlists based on user's preferences using model rankings</li>
+                                </ul>
+                            </li>
                             <li><a class="p-a" href="https://nbviewer.jupyter.org/github/samar14641/covid-visualisations/blob/master/massachusettsPlots.ipynb" target="_blank">MA graphs</a></li>
                             <li><a class="p-a" href="https://github.com/samar14641/covid-visualisations" target="_blank">GitHub</a></li>
                         </ul>
@@ -187,20 +174,13 @@
                 </div>
                 <div class="proj-content">
                     <p>
-                        <b>Detecting Brain Tumours using Machine Learning</b>
+                        <b>Twitter marketing campaign analysis</b>
                         <br><small>Work done along with Jerry Adams Franklin</small>
-                        <br><small>October 2020 - December 2020</small>
+                        <br><small>Jan – May 2022</small>
                         <ul>
-                            <li>Goal: To develop a set of classifiers that can decrease the time taken to detect a brain tumour when given an MRI scan</li>
-                            <li>Early diagnosis has been linked with higher chances of survival</li>
-                            <li>Models implemented: Logistic regression, SVMs (RBF, sigmoid, linear), decision trees, Naive Bayes, Adaptive Boosting, convolutional neural net</li>
-                            <li>Best model: Adaptive Boosting classifier
-                                <ul>
-                                    <li>Sensitivity: 98.2689%</li>
-                                    <li>Accuracy: 99.1671%</li>
-                                    <li>200 estimators of depth 6</li>
-                                </ul>
-                            </li>
+                            <li>Designed an ETL pipeline for Twitter API data analysis based on keywords, utilizing Airflow and Apache Beam for data transformation and storage in BigQuery</li>
+                            <li>Implemented sentiment analysis with Hugging Face models on AWS Lambda and deployed in FastAPI framework on GCP App Engine, with JWT authentication</li>
+                            <li>Locations from the named entities were used to display relevant news using an open-source News API along with real-time metrics on a Tableau dashboard embedded in the WebApp</li>
                             <li><a class="p-a" href="https://github.com/samar14641/brain-tumour-detection/blob/main/Results.pdf" target="_blank">Full results</a></li>
                             <li>Read the <a class="p-a" href="resources/Detecting Brain Tumours using Machine Learning.pdf" target="_blank">report</a></li>
                             <li><a class="p-a" href="https://github.com/samar14641/brain-tumour-detection" target="_blank">GitHub</a></li>
@@ -209,15 +189,13 @@
                 </div>
                 <div class="proj-content">
                     <p>
-                        <b>The Application of Data Mining for Food Recommendation</b>
+                        <b>Storm forecasting using satellite imagery </b>
                         <br><small>Work done along with Akshit Jain and Kartheek Karnati</small>
-                        <br><small>July 2020 - August 2020</small>
+                        <br><small>Jan – May 2022 </small>
                         <ul>
-                            <li>Goal: To answer the questions <em>"what do we cook?"</em> and <em>"what ingredients do we need to make it?"</em></li>
-                            <li>After preprocessing (generalising ingredients, removing/replacing Unicode characters, removing duplicates), we performed some exploratory data analysis to summarise the data</li>
-                            <li>By transforming each recipe into a chain of ingredients, we created a graph for network analysis to determine commonly co-occurring pairs of items</li>
-                            <li>We used the apriori algorithm to mine association rules for items that occur frequently individually, but do not occur together as much as expected</li>
-                            <li>Using Doc2Vec and one-hot encoding, we created two models to recommend recipes based on the similarity of what the user wants</li>
+                            <li>Created an ETL pipeline and deployed NLP models on Amazon ECR using Lambda functions and Serverless framework to summarize Storm Event descriptions in a Dockerized environment</em></li>
+                            <li>Implemented sentiment analysis on data and added extra features such as real-time data, cached data, and threshold time to locate the nearest storm in the application</li>
+                            <li>Developed a Streamlit UI for the nowcasting model to generate and display storm images as GIFs. Embedded a Power BI dashboard for analytics and analysis of storm BI reports</li>
                             <li>View the <a class="p-a" href="resources/Application of Data Mining for Food Recommendation PPT.pdf" target="_blank">presentation</a></li>
                             <li><a class="p-a" href="https://github.com/samar14641/food-recomm" target="_blank">GitHub</a></li>
                         </ul>
@@ -225,15 +203,12 @@
                 </div>
                 <div class="proj-content">
                     <p>
-                        <b>Training an Algorithm to Predict a Ranked List</b>
-                        <br><small>April 2020</small>
+                        <b>Political lean between news sources Analysis</b>
+                        <br><small>Sept – Dec 2021</small>
                         <ul>
-                            <li>Goal: Use machine learning to create a ranked list of documents that would normally be generated by different retrieval models such as BM25 and tf-idf</li>
-                            <li>Implemented for 25 queries (unmodified) on the AP89 corpus</li>
-                            <li>Training data was generated from my own implementation of these retrieval models, where BM25 had the highest average precision of 0.2165</li>
-                            <li>Each query had 1000 non-relevant documents in the data set, along with all documents marked relevant by the qrels file</li>
-                            <li>Models used: linear regression, and an SVR with an RBF kernel</li>
-                            <li>Averge precision of the results: 0.2575 (SVR), 0.2323 (linear regression)</li>
+                            <li>Scraped web data of 80,000 comments from Reddit using R and official tweets of news sources to analyze the political leanings of the data</li>
+                            <li>Utilized sentiment analysis, bi-grams, and word associations to demonstrate bias in various sources, effectively visualizing findings</li>
+                            <li>Utilized multiple ML algorithms to achieve 85% accuracy in classifying articles based on political bias</li>
                             <li><a class="p-a" href="https://github.com/samar14641/ir_ranking-machine_learning" target="_blank">GitHub</a></li>
                         </ul>
                     </p>
